@@ -67,4 +67,25 @@ function formatEntry(entry) {
     `;
 }
 
-$("#birthday").html("23.11.1979");
+var today = new Date();
+var birthday = new Date();
+birthday.setFullYear(1979);
+birthday.setMonth(11);
+birthday.setDate(23);
+birthday.setHours(0);
+birthday.setMinutes(0);
+birthday.setSeconds(0);
+birthday.setMilliseconds(0);
+var birthdayThisYear = new Date();
+birthdayThisYear.setMonth(11);
+birthdayThisYear.setDate(23);
+birthdayThisYear.setHours(0);
+birthdayThisYear.setMinutes(0);
+birthdayThisYear.setSeconds(0);
+birthdayThisYear.setMilliseconds(0);
+var years = (today.getUTCFullYear() - birthday.getUTCFullYear());
+if (birthdayThisYear > today) {
+    years -= 1;
+}
+
+$("#birthday").html(`23.11.1979 (${years} år)`);
