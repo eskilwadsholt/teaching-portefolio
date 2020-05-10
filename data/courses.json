@@ -42,9 +42,9 @@
       "start": 2009,
       "end": 2010,
       "duration": "",
-      "branch": "HTX",
-      "subject": "SRP",
-      "level": "",
+      "branch": "SRP",
+      "subject": "Matematik",
+      "level": "A",
       "role": "Vejleder",
       "participants": 2,
       "content": "Vejledning, bedømmelse",
@@ -57,7 +57,7 @@
       "duration": "",
       "branch": "HTX",
       "subject": "Differentialregningens historie",
-      "level": "",
+      "level": "B",
       "role": "Foredragsholder",
       "participants": "80-100",
       "content": "Matematikhistorisk foredrag for 2.g'ere",
@@ -107,9 +107,9 @@
       "start": 2010,
       "end": 2011,
       "duration": "",
-      "branch": "HTX",
-      "subject": "SRP",
-      "level": "",
+      "branch": "SRP",
+      "subject": "Matematik",
+      "level": "A",
       "role": "Vejleder",
       "participants": 7,
       "content": "Vejledning, bedømmelse",
@@ -172,7 +172,7 @@
       "start": 2012,
       "end": "",
       "duration": "sommer",
-      "branch": "Hfe",
+      "branch": "HFe",
       "subject": "Matematik",
       "level": "A",
       "role": "Underviser",
@@ -302,7 +302,7 @@
       "start": 2015,
       "end": 2016,
       "duration": "",
-      "branch": "HHX/IBB",
+      "branch": "IBB",
       "subject": "Matematik",
       "level": "C",
       "role": "Underviser",
@@ -315,7 +315,7 @@
       "start": 2015,
       "end": 2016,
       "duration": "",
-      "branch": "HHX/IBB",
+      "branch": "IBB",
       "subject": "Matematik",
       "level": "B",
       "role": "Underviser",
@@ -341,7 +341,7 @@
       "start": 2015,
       "end": 2016,
       "duration": "",
-      "branch": "HHX/IBB",
+      "branch": "IBB",
       "subject": "Matematik",
       "level": "A",
       "role": "Underviser",
@@ -351,7 +351,7 @@
       "comment": ""
     },
     {
-      "start": 2016,
+      "start": 2014,
       "end": "",
       "duration": "sommer",
       "branch": "HFe",
@@ -364,7 +364,7 @@
       "comment": "Udvikling af gruppearbejde og arbejde med beviser"
     },
     {
-      "start": 2017,
+      "start": 2016,
       "end": "",
       "duration": "forår",
       "branch": "HTX",
@@ -377,7 +377,7 @@
       "comment": "Elementer af programmering"
     },
     {
-      "start": 2017,
+      "start": 2016,
       "end": "",
       "duration": "forår",
       "branch": "EUD",
@@ -390,7 +390,7 @@
       "comment": "Udvikling af praktiske vinkler og projekter"
     },
     {
-      "start": 2017,
+      "start": 2016,
       "end": "",
       "duration": "forår",
       "branch": "EUX",
@@ -403,7 +403,7 @@
       "comment": "Udvikling af praktiske vinkler og projekter"
     },
     {
-      "start": 2017,
+      "start": 2016,
       "end": "",
       "duration": "sommer",
       "branch": "HFe",
@@ -527,10 +527,10 @@
       "subject": "Programmering",
       "level": "C",
       "role": "Underviser",
-      "participants": 28,
+      "participants": 24,
       "content": "Holdundervisning",
       "tooltip": "",
-      "comment": "Online undervisning pga. corona"
+      "comment": "Online-undervisning pga. COVID19"
     },
     {
       "start": 2019,
@@ -540,10 +540,10 @@
       "subject": "Programmering",
       "level": "B",
       "role": "Underviser",
-      "participants": 28,
+      "participants": 22,
       "content": "Projektundervisning, eksamensprojekt",
       "tooltip": "",
-      "comment": "Online undervisning pga. corona"
+      "comment": "Online-undervisning pga. COVID19"
     },
     {
       "start": 2019,
@@ -553,10 +553,10 @@
       "subject": "Programmering",
       "level": "B",
       "role": "Underviser",
-      "participants": 28,
+      "participants": 22,
       "content": "Projektundervisning, eksamensprojekt",
       "tooltip": "",
-      "comment": "Online undervisning pga. corona"
+      "comment": "Online-undervisning pga. COVID19"
     },
     {
       "start": 2019,
@@ -569,7 +569,7 @@
       "participants": 15,
       "content": "Holdundervisning",
       "tooltip": "",
-      "comment": "Online undervisning pga. corona"
+      "comment": "Online-undervisning pga. COVID19"
     },
     {
       "start": 2019,
@@ -583,5 +583,18 @@
       "content": "Vejledning, eksamen",
       "tooltip": "",
       "comment": ""
+    },
+    {
+        "start": 2019,
+        "end": 2020,
+        "duration": "",
+        "branch": "EXP",
+        "subject": "Musik",
+        "level": "C",
+        "role": "",
+        "participants": 1,
+        "content": "Eksamensprojekt HF, vejledning",
+        "tooltip": "",
+        "comment": ""
     }
   ]

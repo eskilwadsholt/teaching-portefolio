@@ -1,10 +1,167 @@
 html {
     height: 100%;
-    background: lightgray;
+    font: 11pt Helvetica;
 }
 body {
-    margin: 10px;
-    width: calc(100% - 20px);
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 50px;
+    padding-top: 0;
+    width: 100%;
     min-height: calc(100% - 20px);
-    background: rgba(0, 0, 255, 0.4);
+    background: lightgray;
+}
+h1 {
+    text-align: center;
+    font: small-caps 30pt Helvetica;
+}
+.rows {
+    display: flex;
+    flex-direction: column;
+}
+.season {
+    margin-bottom: 10px;
+}
+.season__title {
+    background-image: linear-gradient(to right, white, transparent);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20pt;
+    width: 200px;
+    margin: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.season__content {
+    background: rgba(0, 0, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px;
+    box-sizing: border-box;
+}
+.entry {
+    display: flex;
+}
+.HTX, .HFe, .STX, .HF, .SRP, .EUD, .EUX, .HHX, .IBB, .EXP {
+    background: rgb(47, 47, 138);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 50px;
+}
+.HFe {
+    background: darkgray;
+}
+.HF {
+    background: rgb(41, 143, 41);
+}
+.EXP {
+    background: lightgray;
+    border: 2px solid darkgreen;
+    color: darkgreen;
+}
+.STX {
+    background: rgb(255, 105, 105);
+}
+.HHX {
+    background: rgb(54, 54, 255);
+}
+.IBB {
+    background: white;
+    border: 2px solid blue;
+    color: blue;
+}
+.EUD, .EUX {
+    background: lightgray;
+    border: 2px solid darkblue;
+    color: darkblue;
+}
+.SRP {
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+.subject-and-level {
+    display: flex;
+    box-sizing: border-box;
+    margin: 5px;
+}
+.subject {
+    background: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    padding: 5px;
+}
+.level {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    padding: 5px;
+}
+.participants, .content, .comment {
+    box-sizing: border-box;
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.content {
+    font-size: 9pt;
+    color: lightgray;
+}
+.comment {
+    font-size: 9pt;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.header {
+    position: sticky;
+    background: lightgray;
+    top: 0;
+    width: 101%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#person-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 12pt;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.377);
+}
+#page-title {
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%);
+}
+#person-img {
+    padding: 10px;
+}
+img {
+    box-shadow: 5px 5px 5px black;
+    border-radius: 20px;
 }
