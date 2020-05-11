@@ -63,7 +63,7 @@ h1 {
 }
 .entry:hover {
     transform: translate(-1px, -1px);
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
 .entry::after {
@@ -253,6 +253,11 @@ a:hover {
     box-sizing: border-box;
     padding-bottom: 1px;
     padding-left: 5px;
+}
+#math-intro {
+    margin: 50px;
+    font-size: 14pt;
+    text-shadow: 0 0 5px white;
 }
 
 @media (max-width: 900px) {
