@@ -71,17 +71,16 @@ h1 {
     content: '';
     width: 0;
     height: 0;
-    border-right: 10px solid white;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    margin-top: 10px;
-    margin-left: 20px;
+    border-right: 5px solid white;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin: 15px 0 15px 40px;
     visibility: hidden;
 }
 .entry:hover::after {
     visibility: visible;
-    transform: translate(-20px);
-    transition: all 100ms ease-in-out;
+    transform: translate(-35px);
+    transition: all 200ms ease-in-out;
 }
 .HTX {
     background: rgb(47, 47, 138);
@@ -287,6 +286,8 @@ a:hover {
     #stack-exchange-flair-img {
         width: 30vw;
         height: 8.2vw;
+        max-width: 175px;
+        max-height: 50px;
         border-radius: 1vw;
     }
 }
