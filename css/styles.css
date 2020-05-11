@@ -68,9 +68,13 @@ h1 {
     border-radius: 15px;
 }
 .entry::after {
-    content: '🠔';
-    font-size: 20pt;
-    color: white;
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 10px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-top: 10px;
     margin-left: 20px;
     visibility: hidden;
 }
