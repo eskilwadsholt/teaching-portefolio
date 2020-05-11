@@ -92,15 +92,10 @@ if (birthdayThisYear > today) {
 
 $("#birthday").html(`23.11.1979 (${years} år)`);
 
-$("#person-img").mouseover(function(event) {
+$("#person-img").on('mouseover touchstart', () => {
     $("#person-info").addClass("active");
-    event.stopPropagation();
 });
 
-$('#person-img').mouseout(() => {
+$('#person-img').on('mouseout touchend', () => {
     $("#person-info").removeClass("active");
 });
-
-$("#person-img").click(() => {
-    $("#person-info").toggleClass("active")
-})
