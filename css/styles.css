@@ -185,6 +185,7 @@ h1 {
     transform: scale(0);
     transition: 200ms ease-in-out;
     transform-origin: 90% 0%;
+    box-shadow: 0 0 5px black;
 }
 #person-info.active {
     transform: scale(1);
@@ -218,7 +219,7 @@ h1 {
     display: block;
 }
 #cv-photo {
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0 0 5px black;
     border-radius: 50%;
 }
 #stack-exchange-flair {
@@ -226,6 +227,7 @@ h1 {
 }
 #stack-exchange-flair-img {
     border-radius: 10px;
+    box-shadow: 0 0 5px black;
 }
 #contact-info {
     display: flex;
@@ -259,7 +261,7 @@ a:hover {
     padding-left: 5px;
 }
 #math-intro {
-    margin-top: 80px;
+    margin-top: 160px;
     margin-bottom: 20px;
     font-size: 14pt;
     text-shadow: 0 0 5px white;
