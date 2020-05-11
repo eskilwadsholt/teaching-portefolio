@@ -294,4 +294,10 @@ a:hover {
         max-height: 50px;
         border-radius: 1vw;
     }
+    #cv-photo {
+        width: 8.2vw;
+        height: 8.2vw;
+        max-width: 50px;
+        max-height: 50px;
+    }
 }
