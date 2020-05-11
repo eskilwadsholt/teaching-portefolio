@@ -25,7 +25,7 @@ h1 {
     margin-bottom: 10px;
 }
 .season__title {
-    background-image: linear-gradient(to right, white, transparent);
+    background-image: linear-gradient(to right, white, lightgray);
     border-radius: 10px;
     font-size: 20pt;
     width: 200px;
