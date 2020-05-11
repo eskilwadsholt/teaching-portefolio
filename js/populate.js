@@ -23,7 +23,9 @@ $.getJSON( "../data/courses.json", function( data ) {
 function seasonDiv(season) {
     return `
     <div class="season__title">
-        ${season}
+        <div class="flex-padding10">
+            ${season}
+        </div>
     </div>`;
 }
 
@@ -42,8 +44,8 @@ function formatEntries(entries) {
 
 function formatEntry(entry) {
     return `
-    <div class="entry">
-        <div class="${entry.branch}">
+    <div class="entry flex-padding10">
+        <div class="branch ${entry.branch}">
             ${entry.branch}
         </div>
         <div class="subject-and-level">
@@ -89,3 +91,11 @@ if (birthdayThisYear > today) {
 }
 
 $("#birthday").html(`23.11.1979 (${years} år)`);
+
+$("#person-img").mouseover(() => {
+    $("#person-info").addClass("active");
+});
+
+$('#person-img').mouseout(() => {
+    $("#person-info").removeClass("active")
+});

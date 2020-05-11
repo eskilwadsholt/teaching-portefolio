@@ -1,12 +1,13 @@
 html {
     height: 100%;
+    width: 100%;
+    padding: 0;
     font: 11pt Helvetica;
 }
 body {
-    box-sizing: border-box;
     position: relative;
+    box-sizing: border-box;
     margin: 0;
-    padding: 50px;
     padding-top: 0;
     width: 100%;
     min-height: calc(100% - 20px);
@@ -19,13 +20,13 @@ h1 {
 .rows {
     display: flex;
     flex-direction: column;
+    margin: 50px;
 }
 .season {
     margin-bottom: 10px;
 }
 .season__title {
     background-image: linear-gradient(to right, white, transparent);
-    padding: 10px;
     border-radius: 10px;
     font-size: 20pt;
     width: 200px;
@@ -34,19 +35,21 @@ h1 {
     justify-content: left;
     align-items: center;
 }
+.flex-padding10 {
+    margin: 10px;
+}
 .season__content {
     background: rgba(0, 0, 255, 0.5);
-    padding: 10px;
+    margin: 10px;
     border-radius: 10px;
     width: 100%;
-    margin: 5px;
     box-sizing: border-box;
 }
 .entry {
     display: flex;
+    margin: 5px;
 }
-.HTX, .HFe, .STX, .HF, .SRP, .EUD, .EUX, .HHX, .IBB, .EXP {
-    background: rgb(47, 47, 138);
+.branch {
     color: white;
     font-weight: bold;
     padding: 5px;
@@ -57,6 +60,26 @@ h1 {
     align-items: center;
     margin: 5px;
     width: 50px;
+}
+.entry:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 0 0 5px white;
+    border-radius: 15px;
+}
+.entry::after {
+    content: '🠔';
+    font-size: 20pt;
+    color: white;
+    margin-left: 20px;
+    visibility: hidden;
+}
+.entry:hover::after {
+    visibility: visible;
+    transform: translate(-20px);
+    transition: all 100ms ease-in-out;
+}
+.HTX {
+    background: rgb(47, 47, 138);
 }
 .HFe {
     background: darkgray;
@@ -94,6 +117,7 @@ h1 {
     display: flex;
     box-sizing: border-box;
     margin: 5px;
+    border-radius: 10px;
 }
 .subject {
     background: rgba(255, 255, 255, 0.7);
@@ -134,57 +158,109 @@ h1 {
 
 .header {
     position: sticky;
-    background: lightgray;
+    background: gray;
     top: 0;
-    width: 101%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    z-index: 10;
 }
 #person-info {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    font-size: 12pt;
+    right: 0;
+    top: 70px;
+    font-size: 10pt;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.377);
+    background: white;
+    transform: scale(0);
+    transition: 400ms ease-in-out;
+    transform-origin: 90% 0%;
 }
-#page-title {
+#person-info.active {
+    transform: scale(1);
+    transition: 400ms ease-in-out;
+}
+#page-title, #page-short-title {
     position: fixed;
+    font: small-caps 30pt Helvetica;
     left: 50%;
-    top: 20px;
+    top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translate(-50%);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+}
+#page-short-title {
+    visibility: hidden;
 }
 #person-img {
+    position: relative;
     padding: 10px;
+    margin-right: 50px;
 }
-img {
+#person-img::after {
+    position: absolute;
+    content: '#';
+    color: lightblue;
+    text-shadow: 2px 2px 8px blue;
+    right: 15%;
+    bottom: 15%;
+    display: block;
+}
+#cv-photo {
     box-shadow: 5px 5px 5px black;
-    border-radius: 20px;
+    border-radius: 50%;
+}
+#stack-exchange-flair {
+    margin-left: 50px;
+    border-radius: 10px;
+}
+#stack-exchange-flair-img {
+    border-radius: 10px;
 }
 #contact-info {
     display: flex;
     align-items: center;
+    margin: 10px;
 }
 a:link, a:visited {
     text-decoration: none;
     color: gray;
 }
+a:hover {
+    cursor: pointer;
+    border: 1px solid blue;
+}
 #phone, #mail {
     padding: 5px;
+    white-space: nowrap;
     border-radius: 10px 0 0 10px;
-    background: white;
+    background: black;
+    color: white;
     box-sizing: border-box;
 }
 #mail {
     border-radius: 0 10px 10px 0;
     background: lightgray;
+    color: black;
 }
 #name, #birthday, #address {
     box-sizing: border-box;
     padding-bottom: 1px;
     padding-left: 5px;
+}
+
+@media (max-width: 900px) {
+    #page-title {
+        visibility: hidden;
+    }
+    #page-short-title {
+        visibility: visible;
+        font-size: 4vw;
+    }
 }
