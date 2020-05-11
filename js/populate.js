@@ -92,8 +92,9 @@ if (birthdayThisYear > today) {
 
 $("#birthday").html(`23.11.1979 (${years} år)`);
 
-$("#person-img").mouseover(() => {
+$("#person-img").mouseover((event) => {
     $("#person-info").addClass("active");
+    event.stopPropogation();
 });
 
 $('#person-img').mouseout(() => {
