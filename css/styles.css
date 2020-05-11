@@ -178,17 +178,17 @@ h1 {
     display: flex;
     flex-direction: column;
     right: 0;
-    top: 70px;
+    bottom: 0;
     font-size: 10pt;
     border-radius: 20px;
     background: white;
-    transform: scale(0);
+    transform: translate(0, 95%) scale(0);
     transition: 200ms ease-in-out;
     transform-origin: 90% 0%;
     box-shadow: 0 0 5px black;
 }
 #person-info.active {
-    transform: scale(1);
+    transform: translate(0, 95%) scale(1);
     transition: 200ms ease-in-out;
 }
 #page-title, #page-short-title {
