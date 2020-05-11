@@ -97,5 +97,9 @@ $("#person-img").mouseover(() => {
 });
 
 $('#person-img').mouseout(() => {
-    $("#person-info").removeClass("active")
+    $("#person-info").removeClass("active");
 });
+
+$("#person-img").click(() => {
+    $("#person-info").toggleClass("active")
+})
