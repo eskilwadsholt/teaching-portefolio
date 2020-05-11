@@ -20,7 +20,6 @@ h1 {
 .rows {
     display: flex;
     flex-direction: column;
-    margin: 50px;
 }
 .season {
     margin-bottom: 10px;
@@ -30,24 +29,26 @@ h1 {
     border-radius: 10px;
     font-size: 20pt;
     width: 200px;
-    margin: 5px;
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-bottom: 5px;
 }
 .flex-padding10 {
     margin: 10px;
 }
 .season__content {
     background: rgba(0, 0, 255, 0.5);
-    margin: 10px;
     border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .entry {
     display: flex;
     margin: 5px;
+    flex-wrap: wrap;
 }
 .branch {
     color: white;
@@ -177,12 +178,12 @@ h1 {
     border-radius: 20px;
     background: white;
     transform: scale(0);
-    transition: 400ms ease-in-out;
+    transition: 200ms ease-in-out;
     transform-origin: 90% 0%;
 }
 #person-info.active {
     transform: scale(1);
-    transition: 400ms ease-in-out;
+    transition: 200ms ease-in-out;
 }
 #page-title, #page-short-title {
     position: fixed;
@@ -201,7 +202,6 @@ h1 {
 #person-img {
     position: relative;
     padding: 10px;
-    margin-right: 50px;
 }
 #person-img::after {
     position: absolute;
@@ -217,7 +217,6 @@ h1 {
     border-radius: 50%;
 }
 #stack-exchange-flair {
-    margin-left: 50px;
     border-radius: 10px;
 }
 #stack-exchange-flair-img {
@@ -255,9 +254,16 @@ a:hover {
     padding-left: 5px;
 }
 #math-intro {
-    margin: 50px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     font-size: 14pt;
     text-shadow: 0 0 5px white;
+}
+.left-aligned {
+    margin-left: 50px;
+}
+.right-aligned {
+    margin-right: 50px;
 }
 
 @media (max-width: 900px) {
@@ -267,5 +273,16 @@ a:hover {
     #page-short-title {
         visibility: visible;
         font-size: 4vw;
+    }
+    .left-aligned {
+        margin-left: 10px;
+    }
+    .right-aligned {
+        margin-right: 10px;
+    }
+    #stack-exchange-flair-img {
+        width: 25vw;
+        height: 7.3vw;
+        border-radius: 1vw;
     }
 }
