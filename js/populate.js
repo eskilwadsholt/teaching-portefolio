@@ -97,6 +97,56 @@ $("#person-img").mouseover((event) => {
     event.stopPropagation();
 });
 
+$("#math-intro").mouseover((event) => {
+    $("#person-info").removeClass("active");
+    $("#geometric-animation").addClass("active");
+    animateGeometricSum();
+    event.stopPropagation();
+});
+
 $('html').mouseover(() => {
     $("#person-info").removeClass("active");
+    $("#geometric-animation").removeClass("active");
 });
+
+var divElement = document.getElementById("geometric-animation");
+var svg = d3.select(divElement).append("svg");
+var width = Math.min(200, divElement.clientWidth);
+var height = Math.min(150, divElement.clientHeight);
+svg
+    .attr("width", width)
+    .attr("height", height);
+
+// Generate base graph for geometric sum
+var size = 0.8 * height;
+var left = 2;
+var strokeWidth = 1;
+var infiniteSum = "";
+for (var i = 0; i < 6; i++) {
+    svg.append("rect")
+        .attr("class", "empty-rect")
+        .attr("x", left)
+        .attr("y", height * 0.9 - size)
+        .attr("width", size)
+        .attr("height", size)
+        .attr("stroke-width", strokeWidth);
+    
+    left += size * 1.05 + 4;
+    size *= 0.5;
+    strokeWidth *= 0.5;
+    infiniteSum += `\\frac{1}{4${i > 0 ? "^" + (i + 1): ""}} + `;
+}
+$("#infinite-sum").html(`
+\\[
+    ${infiniteSum} ...=?
+\\]
+`);
+
+
+function animateGeometricSum() {
+    var width = Math.min(200, divElement.clientWidth);
+    var height = Math.min(150, divElement.clientHeight);
+    svg
+        .attr("width", width)
+        .attr("height", height);
+}

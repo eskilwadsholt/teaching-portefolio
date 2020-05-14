@@ -7,19 +7,20 @@
         <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
         <link href="./css/styles.css" rel="stylesheet">
     </head>
     <body>
         <div class="header">
             <a id="stack-exchange-flair" class="left-aligned" href="https://math.stackexchange.com/users/94971/string">
                 <img id="stack-exchange-flair-img" src="https://stackexchange.com/users/flair/3306389.png" 
-                width="160" 
-                height="45" 
+                width="208" 
+                height="58" 
                 alt="Eskil Wadsholt's profile as String on Math Stack Exchange" 
                 title="Eskil Wadsholt's profile as String on Math Stack Exchange">
             </a>
             <div id="person-img" class="right-aligned">
-                <img id="cv-photo" src="./img/cv-photo-50x50.png" alt="CV-photo-PNG">
+                <img id="cv-photo" src="./img/cv-photo-80x80.png" alt="CV-photo-PNG">
                 <div id="person-info" class="">
                     <div class="flex-padding10">
                         <div id="name">
@@ -44,14 +45,10 @@
                 UV-portefølje
             </div>
         </div>
-        <div id="math-intro">
-            \[
-                \sum_{n=1}^\infty \frac{1}{4^n}
-                =
-                \frac{1}{4}+\frac{1}{16}+...
-                \longrightarrow
-                \frac{1}{3}
-            \]
+        <div id="math-intro" class="left-aligned right-aligned">
+            <div id="infinite-sum">
+            </div>
+            <div id="geometric-animation"></div>
         </div>
         <div class="rows left-aligned right-aligned"></div>
     </body>
