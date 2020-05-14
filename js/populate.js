@@ -121,8 +121,7 @@ svg
 var size = 0.8 * height;
 var left = 2;
 var strokeWidth = 1;
-var infiniteSum = "";
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < 10; i++) {
     svg.append("rect")
         .attr("class", "empty-rect")
         .attr("x", left)
@@ -134,7 +133,10 @@ for (var i = 0; i < 6; i++) {
     left += size * 1.05 + 4;
     size *= 0.5;
     strokeWidth *= 0.5;
-    infiniteSum += `\\frac{1}{4${i > 0 ? "^" + (i + 1): ""}} + `;
+}
+var infiniteSum = "";
+for (var i = 1; i <= 4; i++) {
+    infiniteSum += `\\frac{1}{${4**i}} + `;
 }
 $("#infinite-sum").html(`
 \\[
